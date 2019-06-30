@@ -13,10 +13,11 @@ import (
 
 // 如果只需要索引值，去掉 “ , value ” 的部分即可。
 
-var pow = []int{1,2,4,8,16,64,128}
-func main()  {
+var pow = []int{1, 2, 4, 8, 16, 64, 128}
+
+func main() {
 	fmt.Println("starttme:", time.Now().UnixNano())
-	starttime := time.Now().UnixNano();
+	starttime := time.Now().UnixNano()
 	for i, v := range pow {
 		fmt.Printf("2**%d = %d\n", i, v)
 	}
@@ -32,6 +33,6 @@ func main()  {
 		fmt.Printf("%d\n", value)
 	}
 	fmt.Println("endtme:", time.Now().UnixNano())
-	fmt.Println("usetime:", (time.Now().UnixNano() - starttime) / 1000 * 1000)
-	
+	fmt.Println("usetime:", (time.Now().UnixNano()-starttime)/1000*1000)
+
 }

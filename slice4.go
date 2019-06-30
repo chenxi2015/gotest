@@ -4,8 +4,8 @@ import (
 	"fmt"
 )
 
-func main()  {
-	var z []int 
+func main() {
+	var z []int
 	fmt.Println(z, len(z), cap(z))
 
 	if z == nil {

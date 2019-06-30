@@ -9,7 +9,7 @@ import (
 func main() {
 	// fmt.Println("hello world")
 	r := RandInt(10, 13)
-	fmt.Println(r, time.Now().UnixNano())
+	fmt.Println(r, "time:", time.Now().UnixNano())
 	t := time.Now().UnixNano()
 	sum := 0
 	for i := 0; i <= 40000+r; i++ {
@@ -18,8 +18,9 @@ func main() {
 		}
 	}
 	i := float64(time.Now().UnixNano()-t) / (1000000 * 1000)
-	fmt.Println(sum)
-	fmt.Println(i)
+	fmt.Printf("sum: %d", sum)
+	fmt.Println("")
+	fmt.Println("second:", i)
 }
 
 func RandInt(min, max int) int {
