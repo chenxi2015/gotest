@@ -4,13 +4,13 @@ import (
 	"fmt"
 )
 
-type Vertex struct {
+type Vertex3 struct {
 	X, Y int
 }
 
-func main()  {
-	
-	v := Vertex{1,2}
+func main() {
+
+	v := Vertex3{1, 2}
 
 	p := &v
 

@@ -16,5 +16,6 @@ func main() {
 
 	fmt.Println(compute(hypot))
 
+	fmt.Println(math.Pow(3, 2)) //  3的2次方
 	fmt.Println(compute(math.Pow))
 }

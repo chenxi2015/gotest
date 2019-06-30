@@ -4,12 +4,13 @@ import (
 	"fmt"
 )
 
-type Vertex struct {
+type Vertex1 struct {
 	X int
 	Y int
 }
+
 func main() {
-	x := Vertex{3,4}
+	x := Vertex1{3, 4}
 	fmt.Println(x)
-	fmt.Println(Vertex{1,2})
+	fmt.Println(Vertex1{1, 2})
 }
